@@ -1,0 +1,17 @@
+@import '../../../mixins/shadow';
+@import '../../../constants/colors';
+@import '../../../constants/sizes';
+
+.navbar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: $nav_bar_width;
+  height: 100%;
+
+  z-index: 999;
+
+  @include shadow();
+}

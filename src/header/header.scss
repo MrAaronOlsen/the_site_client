@@ -1,6 +1,9 @@
 @import '../mixins/shadow';
 
 .header {
+  display: flex;
+  flex-direction: row;
+
   height: 100px;
   width: 100%;
 
@@ -9,4 +12,19 @@
   background-color: white;
 
   @include shadow()
+
+  .logo {
+    font-family: 'Proza Libre', sans-serif;
+    
+    align-self: center;
+
+    height: max-content;
+    width: 200px;
+
+    font-size: 40px;
+
+    padding: 10px;
+
+    text-align: center;
+  }
 }

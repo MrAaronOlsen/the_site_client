@@ -1,1 +1,1 @@
-import "./app"
+import "./main/Main.js"

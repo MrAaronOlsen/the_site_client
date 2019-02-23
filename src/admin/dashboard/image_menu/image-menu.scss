@@ -1,0 +1,95 @@
+@import '../../../mixins/shadow';
+
+.image-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 800px;
+  height: 80vh;
+  padding: 10px;
+
+  background-color: white;
+  border-radius: 10px;
+
+  z-index: 999;
+
+  @include shadow();
+
+  .image-header {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 70px;
+
+    padding: 5px;
+    margin-bottom: 10px;
+
+    background-color: white;
+
+    .image-header-section {
+      display: flex;
+      flex-direction: row;
+
+      padding: 0 10px 0 10px;
+
+      .action_btn {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .image-nodes {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+
+    .container {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-evenly;
+      justify-content: flex-start;
+
+      width: 100%;
+      height: max-content;
+
+      .image-node {
+        position: relative;
+        width: 100px;
+        height: 100px;
+
+        margin: 5px;
+
+        .checkbox {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+        }
+
+        .image {
+          width: 100%;
+          height: 100%;
+
+          border-radius: 5px;
+          @include shadow();
+        }
+      }
+    }
+  }
+
+  .filepond--root {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}

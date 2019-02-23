@@ -1,0 +1,18 @@
+@import './shadow';
+
+@mixin main-window {
+  .main-window {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 800px;
+    padding: 10px;
+
+    z-index: 0;
+
+    background-color: white;
+
+    @include shadow();
+  }
+}

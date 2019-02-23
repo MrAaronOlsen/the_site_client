@@ -1,0 +1,16 @@
+@import '../../../mixins/main_window.scss';
+@import '../../../mixins/shadow.scss';
+
+@include main-window();
+
+.about-edit {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  @include shadow();
+}

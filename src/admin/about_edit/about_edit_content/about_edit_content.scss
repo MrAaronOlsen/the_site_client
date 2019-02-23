@@ -1,0 +1,42 @@
+@import '../../../mixins/shadow.scss';
+@import '../../../constants/colors.scss';
+
+.about-edit-content {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: 800px;
+
+  padding: 5px;
+
+  background-color: white;
+  border-radius: 5px;
+
+  @include shadow();
+
+  .about-edit-content-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 30px;
+    width: 100%;
+
+    margin-bottom: 5px;
+
+    .about-edit-content-list {
+      width: 150px;
+    }
+  }
+
+  .about-edit-images {
+    width: 100px;
+    height: 25px;
+
+    border: 1px solid $color-main-dark;
+    border-radius: 5px;
+
+    @include shadow();
+  }
+}

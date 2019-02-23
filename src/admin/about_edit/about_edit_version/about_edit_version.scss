@@ -1,0 +1,58 @@
+@import '../../../mixins/shadow.scss';
+@import '../../../constants/colors.scss';
+
+.about-edit-version {
+  display: flex;
+  flex-direction: column;
+
+  width: 200px;
+  height: max-content;
+
+  padding: 5px;
+
+  background-color: white;
+  border-radius: 5px;
+
+  @include shadow();
+
+  .about-edit-version-header {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-end;
+    margin-bottom: 10px;
+
+  }
+
+  .about-edit-version-list {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: max-content;
+
+    border: 1px solid $color-main-dark;
+    border-radius: 5px;
+
+    .about-edit-version-list-row {
+      display: flex;
+      flex-direction: row;
+
+      height: 25px;
+      width: 100%;
+
+      padding-left: 5px;
+
+      border-radius: 4px;
+    }
+
+    .version-selected {
+      border: 1px solid $color-main;
+      @include shadow();
+    }
+
+    .about-edit-version-list-row:hover {
+      background-color: $color-main-light;
+    }
+  }
+}

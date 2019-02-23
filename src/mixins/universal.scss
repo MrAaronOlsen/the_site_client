@@ -1,0 +1,42 @@
+@import '../constants/text';
+
+@mixin universal {
+  #root, html, body, main {
+    height: 100%;
+    width: 100%;
+  }
+
+  html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  body {
+    font-family: 'Cormorant Garamond', serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-size: $text-size-reg;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
